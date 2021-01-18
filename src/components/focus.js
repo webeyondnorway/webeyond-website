@@ -1,33 +1,20 @@
 import React from "react"
-import { Container, Box, Typography } from "@material-ui/core"
-import { makeStyles } from "@material-ui/core/styles"
-
-const weStyles = makeStyles(() => ({
-  root: {
-    height: "85vh",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  underline: {
-    borderBottom: "3px solid",
-    // fontFamily: "Sofia",
-  },
-}))
+import styles from "./utils.module.css"
 
 const focus = () => {
-  const styles = weStyles()
   return (
-    <Container maxWidth="md" className={styles.root}>
-      <Box>
-        <p>
-          Focus on efficient development of high quality solutions with
-          state-of-the-art technology, design and workflow - delivering top
-          quality and <span className={styles.underline}>reducing cost</span>{" "}
-          and <span className={styles.underline}>time to market</span>.
-        </p>
-      </Box>
-    </Container>
+    <div className={styles.container}>
+      <div className={styles.block}>
+        <div className={styles.centered}>
+          <p>
+            Focused on efficient development with state-of-the-art technology,
+            design and workflow - delivering top quality,{" "}
+            <span className={styles.underline}>reducing cost</span> &{" "}
+            <span className={styles.underline}>time to market</span>.
+          </p>
+        </div>
+      </div>
+    </div>
   )
 }
 

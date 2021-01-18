@@ -1,0 +1,18 @@
+
+.root {  
+  display: flex;
+  height: 400px;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.privacy {
+  font-size: 13px;
+  color: rgba(0,0,0,0.50);
+}

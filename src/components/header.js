@@ -1,7 +1,6 @@
-import { Link } from "gatsby"
-import React from "react"
-import { AppBar, Toolbar, Box } from "@material-ui/core"
+import { AppBar, Box, Toolbar } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
+import React from "react"
 import Logo from "./logo"
 
 const weStyles = makeStyles(() => ({

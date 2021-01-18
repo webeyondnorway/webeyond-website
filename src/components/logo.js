@@ -1,5 +1,5 @@
+import { makeStyles } from "@material-ui/core/styles"
 import React from "react"
-import { makeStyles, StylesProvider } from "@material-ui/core/styles"
 
 const weStyles = makeStyles(() => ({
   logoContainer: {

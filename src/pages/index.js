@@ -1,23 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
-import Hero from "../components/hero"
-import Technology from "../components/technology"
 import Focus from "../components/focus"
-import Freedom from "../components/freedom"
-import Project from "../components/project"
+import Hero from "../components/hero"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import Showcase from "../components/showcase"
+import Punchline from "../components/punchline"
+import Vision from "../components/vision"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Hero />
-    <Technology />
+    <Punchline />
     <Focus />
-    <Freedom />
-    <Project />
+    <Vision />
+    <Showcase />
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div> */}
