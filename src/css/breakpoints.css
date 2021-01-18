@@ -1,0 +1,13 @@
+/* No media queries for mobile and small devices since Sytalaust 
+takes a mobile first approach, and these styles are therefor default */
+
+/* Medium devices (tablets, 768px and up) */
+@custom-media --medium-and-up (min-width: 768px);
+
+/* Large devices (desktops, 992px and up) */
+@custom-media --large-and-up (min-width: 1200px);
+
+@custom-media --xl-and-up (min-width: 1600px);
+/* Extra large devices (large desktops, 1200px and up) */
+@custom-media --xxl-and-up (min-width: 1800px);
+
