@@ -1,30 +1,28 @@
-import React from "react"
-import { Container, Box, Typography } from "@material-ui/core"
-import Logo from "./logo"
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
-import styles from "./footer.module.css"
+import React from "react"
+import Logo from "./logo"
+import styles from "./utils.module.css"
+import { cn } from "../helpers/"
 
 const footer = () => {
   return (
-    <Container className={styles.root}>
-      <Box className={styles.row}>
-        <Box display="flex" p={1}>
-          <Logo />
-        </Box>
-        <Box display="flex" p={1}>
-          <LinkedInIcon />
-        </Box>
-      </Box>
-      <Box className={styles.row}>
-        <Typography
-          className={styles.pricacy}
-          variant="body2"
-          classes={{ body2: styles.privacy }}
-        >
+    <div className={styles.footerContainer}>
+      <div className={styles.footerBlock}>
+        <div className={styles.flexRow}>
+          <div className={cn(styles.flexItem, styles.defaultPadding)}>
+            <Logo />
+          </div>
+          <div className={styles.defaultPadding}>
+            <LinkedInIcon />
+          </div>
+        </div>
+      </div>
+      <div className={styles.flexRow}>
+        <span className={styles.pricacy}>
           Privacy policy - we dont store your data
-        </Typography>
-      </Box>
-    </Container>
+        </span>
+      </div>
+    </div>
   )
 }
 

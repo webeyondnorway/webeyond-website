@@ -1,6 +1,5 @@
 import React from "react"
 import styles from "./utils.module.css"
-import { AiOutlineLine } from "react-icons/ai"
 
 const vision = () => {
   return (

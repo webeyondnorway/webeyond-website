@@ -1,7 +1,5 @@
 import React from "react"
 import styles from "./utils.module.css"
-import backgroundVideo from "../assets/video.mp4"
-import svgOverlay from "../assets/overlay.js"
 
 const hero = () => {
   return (
@@ -10,14 +8,6 @@ const hero = () => {
         {/* <h1>A technology & design company</h1> */}
         <div className={styles.heroContent}>
           <div className={styles.heroText}>
-            {/* <video
-              className={styles.video}
-              loop="true"
-              autoplay="autoplay"
-              muted
-            >
-              <source src={backgroundVideo} type="video/mp4" />
-            </video> */}
             <div className={styles.heroBg}></div>
             <svg
               className={styles.svgOverlay}

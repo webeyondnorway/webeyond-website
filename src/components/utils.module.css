@@ -10,6 +10,33 @@
   margin:0 auto;
 }
 
+.footerContainer {
+  max-width: 960px;
+  padding:0 24px;
+  margin:0 auto;
+}
+
+.footerBlock {
+  display: flex;
+  height: 400px;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.flexRow {
+  display:flex;
+  flex-flow: row;
+}
+
+.flexItem {
+  display:flex;
+}
+
+.defaultPadding {
+  padding:1em;
+}
+
 .block {
   height:85vh;
   display:flex;
