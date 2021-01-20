@@ -35,36 +35,12 @@ const myanimation = () => {
             className={styles.left}
             d="M114.864 675.835L554.864 0.834595H-325.136L114.864 675.835Z"
           />
-          {/* <path
-            className={styles.leftBottom}
-            d="M-324.963 0.834641L115.037 675.835H-764.963L-324.963 0.834641Z"
-            fill="black"
-          /> */}
           <path
             className={styles.right}
             d="M991.219 675.835L1431.22 0.834595H551.219L991.219 675.835Z"
           />
-          {/* <path
-            className={styles.rightBottom}
-            d="M1431.22 0.834656L1871.22 675.835H991.218L1431.22 0.834656Z"
-            fill="black"
-          /> */}
         </g>
       </svg>
-
-      {/* <svg
-        className={styles.foo}
-        width="957"
-        height="829"
-        viewBox="0 0 957 829"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M478.663 0.259644L956.709 828.26H0.616699L478.663 0.259644Z"
-          fill="black"
-        />
-      </svg> */}
     </div>
   )
 }

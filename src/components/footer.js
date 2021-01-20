@@ -12,7 +12,7 @@ const footer = () => {
           <div className={cn(styles.flexItem, styles.defaultPadding)}>
             <Logo />
           </div>
-          <div className={styles.defaultPadding}>
+          <div className={(styles.flexItem, styles.defaultPadding)}>
             <LinkedInIcon />
           </div>
         </div>

@@ -7,7 +7,7 @@ const weStyles = makeStyles(() => ({
   },
   logo: {
     width: "115px",
-    height: "auto",
+    height: "100%",
   },
 }))
 
