@@ -5,12 +5,16 @@ const showcase = () => {
   return (
     <div className={styles.container}>
       <div className={styles.block}>
-        <div>
+        <div className={styles.centered}>
           <h2 style={{ color: "#eee" }}>rakett.io</h2>
-
           <p>
             Rakett is our latest project. Go check it out, {""}
-            <a className={styles.link} href="http://rakett.io">
+            <a
+              className={styles.link}
+              href="http://rakett.io"
+              target="_blank"
+              rel="noreferrer"
+            >
               here
             </a>
           </p>

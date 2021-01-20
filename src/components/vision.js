@@ -1,23 +1,20 @@
 import React from "react"
+import { cn } from "../helpers"
 import styles from "./utils.module.css"
 
 const vision = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.block}>
+      <div className={cn(styles.block, styles.underlinedBlock)}>
         <div className={styles.centered}>
           <p>
-            Strong believers in freedom, being able to work from anywhere in
-            environments based on individual preferences - that ultimately{" "}
+            Believers in freedom, being able to work from anywhere in
+            environments based on individual preferences, that ultimately{" "}
             <span className={styles.underlineWithPadding}>
               nurtures creativity
-            </span>
-            ,{" "}
-            <span className={styles.underlineWithPadding}>improve quality</span>{" "}
+            </span>{" "}
             &{" "}
-            <span className={styles.underlineWithPadding}>
-              boost productivity
-            </span>
+            <span className={styles.underlineWithPadding}>improve quality</span>
             .
           </p>
         </div>

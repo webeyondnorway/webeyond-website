@@ -1,0 +1,207 @@
+
+
+
+ h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+h2 {
+  font-size: 2em;
+}
+.root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#3800e7, #8a15ff);
+  width: 100%;
+}
+.root:before, .root:after {
+  content: "";
+  display: block;
+  position: absolute;
+  /* z-index: -3; */
+}
+.root:before {
+  right: 0;
+  bottom: -19;
+  height: 30em;
+  width: 30em;
+  border-radius: 30em;
+  background: linear-gradient(#3800e7, #8a15ff);
+  align-self: flex-end;
+  animation: gradient-fade 8s ease-in-out 3s infinite alternate;
+}
+.root:after {
+  top: 0;
+  left: 30;
+  height: 10em;
+  width: 10em;
+  border-radius: 10em;
+  background: linear-gradient(#3800e7, #8a15ff);
+  animation: gradient-fade-alt 6s ease-in-out 3s infinite alternate;
+}
+.mainTextWrapper {
+  position: relative;
+  padding: 2em;
+}
+.mainTextWrapper:before, .mainTextWrapper:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+.mainTextWrapper:before {
+  /* z-index: -1; */
+  top: -3em;
+  right: -3em;
+  width: 13em;
+  height: 13em;
+  opacity: 0.7;
+  border-radius: 13em;
+  background: linear-gradient(#15e0ff, #8a15ff);
+  animation: rotation 7s linear infinite;
+}
+.mainTextWrapper:after {
+  /* z-index: -1; */
+  bottom: -20em;
+  width: 20em;
+  height: 20em;
+  border-radius: 20em;
+  background: linear-gradient(#d000c5, #8a15ff);
+  animation: rotation 7s linear infinite;
+}
+.arrow {
+  z-index: 1000;
+  opacity: 0.5;
+  position: absolute;
+}
+.arrowTop {
+  top: 0;
+  left: -5em;
+}
+.arrowBottom {
+  bottom: 0;
+  right: 3em;
+}
+.circle {
+  transform: translate(50%, -50%) rotate(0deg);
+  transform-origin: center;
+}
+.circle--ltblue {
+  height: 20em;
+  width: 20em;
+  border-radius: 20em;
+  background: linear-gradient(#15e0ff, #3800e7);
+}
+.backdrop {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-color: pink;
+}
+.dottedCircle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.3;
+  animation: rotation 38s linear infinite;
+}
+.drawIn {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: draw 15s ease-in-out alternate infinite;
+}
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1000;
+ }
+  to {
+    stroke-dashoffset: 0;
+ }
+}
+.itemTo {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+.bounce1 {
+  animation-name: bounce1;
+  animation-timing-function: ease;
+}
+.bounce2 {
+  animation-name: bounce2;
+  animation-timing-function: ease;
+}
+.bounce3 {
+  animation-name: bounce3;
+  animation-timing-function: ease;
+}
+@keyframes bounce1 {
+  0% {
+    transform: translateY(0);
+ }
+  50% {
+    transform: translateY(50px);
+ }
+  100% {
+    transform: translateY(0);
+ }
+}
+@keyframes bounce2 {
+  0% {
+    transform: translateY(0);
+ }
+  50% {
+    transform: translateY(-30px);
+ }
+  100% {
+    transform: translateY(0);
+ }
+}
+@keyframes bounce3 {
+  0% {
+    transform: translateY(0);
+ }
+  50% {
+    transform: translateY(30px);
+ }
+  100% {
+    transform: translateY(0);
+ }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+ }
+  to {
+    transform: rotate(360deg);
+ }
+}
+@keyframes gradient-fade {
+  from {
+    transform: translate(10%, -10%) rotate(0deg);
+ }
+  to {
+    transform: translate(50%, -50%) rotate(360deg);
+ }
+}
+@keyframes gradient-fade-alt {
+  from {
+    transform: translate(-20%, 20%) rotate(0deg);
+ }
+  to {
+    transform: translate(-60%, 60%) rotate(360deg);
+ }
+}
+
+
+.geoArrow {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-miterlimit: 10
+}

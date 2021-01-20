@@ -10,6 +10,7 @@ import Vision from "../components/vision"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <h1 hidden>Hi, we are Webeyond. A web technology and design company</h1>
     <Hero />
     <Punchline />
     <Focus />

@@ -2,7 +2,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import React from "react"
 import Logo from "./logo"
 import styles from "./utils.module.css"
-import { cn } from "../helpers/"
+import { cn } from "../helpers"
 
 const footer = () => {
   return (
@@ -16,11 +16,16 @@ const footer = () => {
             <LinkedInIcon />
           </div>
         </div>
-      </div>
-      <div className={styles.flexRow}>
-        <span className={styles.pricacy}>
-          Privacy policy - we dont store your data
-        </span>
+        <div className={styles.flexRow}>
+          <span className={styles.footerSlogan}>Solutions you will love.</span>
+        </div>
+        <div className={cn(styles.flexRow, styles.privacyPolicyRow)}>
+          <div className={styles.centered}>
+            <p className={styles.privacyPolicyText}>
+              Oh, and by the way, we don`t store your data.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   )
