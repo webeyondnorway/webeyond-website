@@ -3,10 +3,10 @@ import styles from "./utils.module.css"
 
 const showcase = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.largeContainer}>
       <div className={styles.block}>
         <div className={styles.centered}>
-          <h2 style={{ color: "#eee" }}>rakett.io</h2>
+          <h2>rakett.io</h2>
           <p>
             Rakett is our latest project. Go check it out, {""}
             <a

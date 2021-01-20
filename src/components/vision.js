@@ -5,7 +5,7 @@ import styles from "./utils.module.css"
 const vision = () => {
   return (
     <div className={styles.container}>
-      <div className={cn(styles.block, styles.underlinedBlock)}>
+      <div className={cn(styles.block)}>
         <div className={styles.centered}>
           <p>
             Believers in freedom, being able to work from anywhere in

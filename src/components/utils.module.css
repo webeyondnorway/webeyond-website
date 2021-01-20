@@ -18,7 +18,7 @@
 
 .footerBlock {
   display: flex;
-  min-height: 400px;
+  min-height: 600px;
   align-items: center;
   flex-flow: column;
   justify-content: center;
@@ -30,7 +30,7 @@
 }
 
 .privacyPolicyRow {
-  padding:8em 0;
+  padding:8em 0 0 0;
 }
 
 .privacyPolicyText {
@@ -59,7 +59,7 @@ letter-spacing: 2px;
 }
 
 .underlinedBlock {
-  border-bottom: 16px solid #eee;
+  border-bottom: 16px solid #000;
 }
 
 .heroBlock {
@@ -192,4 +192,13 @@ letter-spacing: 2px;
   right:0;
 }
 
+.largeContainer {
+  max-width: 1600px;
+  padding:0 24px;
+  margin:0 auto;
+  background-color:#ffdda9;
+}
 
+
+
+/* #ffdda9 */
