@@ -22,7 +22,7 @@ const footer = () => {
         <div className={cn(styles.flexRow, styles.privacyPolicyRow)}>
           <div className={styles.centered}>
             <p className={styles.privacyPolicyText}>
-              Oh, and by the way, we don`t store your data.
+              Oh, by the way.. we don`t store your data.
             </p>
           </div>
         </div>
