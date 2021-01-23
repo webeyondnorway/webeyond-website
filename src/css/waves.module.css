@@ -91,12 +91,3 @@
      /* transform: scale(1.5); */
 	}
 }
- a {
-	 text-decoration: none;
-	 color: rgba(255, 255, 255, 0.6);
-	 position: absolute;
-	 right: 10px;
-	 bottom: 10px;
-	 font-size: 12px;
-}
- 
