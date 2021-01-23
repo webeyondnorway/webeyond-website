@@ -21,15 +21,19 @@ iteration-count | direction | fill-mode | play-state | name */
   transform-origin: bottom center;
   visibility: hidden;
   transform:scale(0);
+  fill: #fff;
   animation: center 1s ease-in-out 0.2s 1 normal forwards;
 }
 
 @keyframes center {
   0% {
+    fill: #000;
     visibility: visible;
     transform: scale(0);
   }
+
   100% {
+    fill: #000;
     visibility: visible;
     transform: scale(1);
   } 
@@ -46,18 +50,21 @@ iteration-count | direction | fill-mode | play-state | name */
 
 .left, .right {
   /* fill:#ffdda9; */
-  fill:#000;
+  fill: #fff;
+  
   visibility: hidden;
   transform:scale(0);
-  animation: leftRight 1.5s ease-in-out 0.2s 1 normal forwards;
+  animation: leftRight 2s ease-in-out 0.2s 1 normal forwards;
 }
 
 @keyframes leftRight {
   0% {
+    fill:#000;
     visibility: visible;
     transform: scale(0);
   }
   100% {    
+    fill:#000;
     visibility: visible;
     transform: scale(1);
   }
