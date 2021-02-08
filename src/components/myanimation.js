@@ -5,6 +5,23 @@ const myanimation = () => {
     <div className={styles.root}>
       <svg
         className={styles.svg}
+        width="1105"
+        height="676"
+        viewBox="0 0 1105 676"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className={styles.center}
+          d="M5.65625 5.14154H1099.66V670.142H5.65625V5.14154Z"
+          // fill="black"
+          stroke="white"
+          stroke-width="10"
+        />
+      </svg>
+
+      {/* <svg
+        className={styles.svg}
         // width="1105"
         // height="676"
         viewBox="0 0 1105 676"
@@ -40,7 +57,7 @@ const myanimation = () => {
             d="M991.219 675.835L1431.22 0.834595H551.219L991.219 675.835Z"
           />
         </g>
-      </svg>
+      </svg> */}
     </div>
   )
 }

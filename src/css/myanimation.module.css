@@ -18,24 +18,21 @@ iteration-count | direction | fill-mode | play-state | name */
 }
 
 .center {
-  transform-origin: bottom center;
-  visibility: hidden;
-  transform:scale(0);
+  /* transform-origin: center;
+  visibility: hidden; */
+  /* transform:opacity; */
+  /* fill: #fff; */
   fill: #fff;
   animation: center 1s ease-in-out 0.2s 1 normal forwards;
 }
 
 @keyframes center {
   0% {
-    fill: #000;
-    visibility: visible;
-    transform: scale(0);
+    fill: #fff;
   }
 
   100% {
     fill: #000;
-    visibility: visible;
-    transform: scale(1);
   } 
 }
 
