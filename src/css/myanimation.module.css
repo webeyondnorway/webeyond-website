@@ -15,6 +15,7 @@ iteration-count | direction | fill-mode | play-state | name */
   height: 100%;
   max-height: 675px;
   overflow: hidden;
+  fill:#fff;
 }
 
 .center {
@@ -23,7 +24,7 @@ iteration-count | direction | fill-mode | play-state | name */
   /* transform:opacity; */
   /* fill: #fff; */
   fill: #fff;
-  animation: center 1s ease-in-out 0.2s 1 normal forwards;
+  animation: center 1s ease-in-out 0.5s 1 normal forwards;
 }
 
 @keyframes center {
