@@ -6,12 +6,12 @@ const showcase = () => {
     <div className={styles.largeContainer}>
       <div className={styles.block}>
         <div className={styles.centered}>
-          <h2>rakett.io</h2>
+          <h2>rakett.app</h2>
           <p>
             Rakett is our latest project. Go check it out, {""}
             <a
               className={styles.link}
-              href="http://rakett.io"
+              href="http://rakett.app"
               target="_blank"
               rel="noreferrer"
             >
