@@ -13,7 +13,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1 hidden>Really nice web solutions by Webeyond</h1>
-    <IntroductionText />
+    {/* <IntroductionText /> */}
     <Technologies />
     <Focus />
     <Vision />
