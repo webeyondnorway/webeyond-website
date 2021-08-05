@@ -5,31 +5,33 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import { MuiThemeProvider } from "@material-ui/core"
+import CssBaseline from "@material-ui/core/CssBaseline"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
+import React from "react"
 import Footer from "./footer"
+import Header from "./header"
 import "./layout.css"
+import theme from "./theme"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-
-      <main>{children}</main>
-      <Footer />
+      <MuiThemeProvider theme={theme}>
+        <Header siteTitle="Webeyond" />
+        <main>{children}</main>
+        <Footer />
+      </MuiThemeProvider>
     </>
   )
 }

@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     maxWidth: "100%",
   },
   accent1: {
-    color: "#FF0081",
+    color: "#FF9B50",
     fontSize: "140%",
   },
   accent2: {
@@ -26,11 +26,11 @@ const useStyles = makeStyles(theme => ({
     fontSize: "130%",
   },
   accent3: {
-    color: "#FF9B50",
+    color: "#42C6FF",
     fontSize: "120%",
   },
   accent4: {
-    color: "#42C6FF",
+    color: "#F6BE4F",
     fontSize: "110%",
   },
   accent5: {
@@ -41,7 +41,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const Punchline = () => {
+const Technologies = () => {
   const styles = useStyles()
   return (
     <div className={styles.root}>
@@ -62,4 +62,4 @@ const Punchline = () => {
   )
 }
 
-export default Punchline
+export default Technologies

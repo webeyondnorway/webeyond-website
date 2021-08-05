@@ -4,10 +4,15 @@
   margin:0 auto;
 }
 
-.heroContainer {
+.hero {
   max-width: 1152px;
   padding:0 24px;
   margin:0 auto;
+  background:black;
+}
+
+.header {
+  background:black;
 }
 
 .footerContainer {
@@ -185,16 +190,6 @@ letter-spacing: 2px;
   font-family: "SofiaBold";
 }
 
-.header {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 175px;
-  position: absolute;
-  top:0;
-  left:0;
-  right:0;
-}
 
 .largeContainer {
   max-width: 1600px;

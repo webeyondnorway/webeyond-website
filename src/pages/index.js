@@ -4,21 +4,21 @@ import Hero from "../components/hero"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Showcase from "../components/showcase"
-import Punchline from "../components/punchline"
+import Technologies from "../components/Technologies"
 import Vision from "../components/vision"
+import IntroductionText from "../components/IntroductionText"
+import Hello from "../components/Hello"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1 hidden>Hi, we are Webeyond. A web technology and design company</h1>
-    <Hero />
-    <Punchline />
+    <h1 hidden>Really nice web solutions by Webeyond</h1>
+    <IntroductionText />
+    <Technologies />
     <Focus />
     <Vision />
     <Showcase />
-    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div> */}
+    <Hello />
   </Layout>
 )
 

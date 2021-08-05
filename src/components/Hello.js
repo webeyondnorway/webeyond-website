@@ -1,9 +1,10 @@
 import React from "react"
-import { Typography, Container } from "@material-ui/core"
+import { Typography, Container, Button, IconButton } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
-
+import MailIcon from "@material-ui/icons/Mail"
 import { GiPalmTree } from "react-icons/gi"
-
+import InstagramIcon from "@material-ui/icons/Instagram"
+import LinkedInIcon from "@material-ui/icons/LinkedIn"
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
@@ -43,25 +44,29 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const VisionText = ({}) => {
+const HelloText = ({}) => {
   const styles = useStyles()
   return (
     <Container maxWidth="lg">
       <div className={styles.root}>
         <div className={styles.content}>
-          <Typography variant="h4" className={styles.text}>
-            <span className={styles.opacity}>
-              Believers in freedom, being able to work from anywhere in
-              environments based on individual preferences, that ultimately{" "}
-            </span>
-            <span className={styles.span1}>nurtures creativity</span>{" "}
-            <span className={styles.opacity}>and</span>{" "}
-            <span className={styles.span2}>improve quality</span>.
+          <Typography variant="h1" className={styles.text}>
+            Lets talk?
           </Typography>
+
+          <IconButton color="primary">
+            <MailIcon fontSize="large" />
+          </IconButton>
+          <IconButton color="primary">
+            <LinkedInIcon fontSize="large" />
+          </IconButton>
+          <IconButton color="primary">
+            <InstagramIcon fontSize="large" />
+          </IconButton>
         </div>
       </div>
     </Container>
   )
 }
 
-export default VisionText
+export default HelloText
